@@ -1,0 +1,340 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: white;
+    /* position: fixed;
+    width: 100%; */
+}
+
+.nav-link{
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: white;
+    background-color: black;
+}
+
+.navbar-brand{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* main section*/
+.main{
+    /* background: url(./img/up-2-profile.png) no-repeat; */
+    /* background-size: cover; */
+    width: 100%;
+    height: 100vh;
+}
+
+.main h3{
+    font-size: 4.4rem;
+    font-weight: 700;
+}
+
+.main h6{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    line-height: 1;
+    border-bottom: 2px solid black;
+    width: 45%;
+    
+}
+
+.main .bt1{
+    height: 55px;
+    width: 138px;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.main .bt1:hover{
+    background-color: transparent;
+    transition: 0.5s;
+    color: black;
+    border: 1px solid black;
+}
+
+.main .bt2{
+    height: 55px;
+    width: 138px;
+    background-color: transparent;
+    color: black;
+    outline: none;
+    border: 1px solid black;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.main .bt2:hover{
+    background-color: black;
+    transition: 0.5s;
+    color: white;
+}
+
+
+.main img{
+    width: 130%;
+    height: auto;
+}
+
+
+.about img{
+    -webkit-box-shadow: -2px 5px 25px 8px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 5px 25px 8px rgba(0,0,0,0.75);
+     box-shadow: -2px 5px 25px 8px rgba(0,0,0,0.75);
+} 
+
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+}
+h2{
+    font-size: 1.5rem;
+    font-weight: 750;
+}
+
+.progress{
+    background-color: rgb(223, 219, 219);
+    justify-content: flex-start;
+    border-radius: 50px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 25px;
+    width: 100%;
+
+    -webkit-box-shadow: -2px 10px 30px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 10px 30px -3px rgba(0,0,0,0.75);
+     box-shadow: -2px 10px 30px -3px rgba(0,0,0,0.75);
+}
+
+.progress p{
+    color: white;
+    padding-left: 10px;
+    padding-top: 3px;
+    font-weight: bold;
+}
+
+.pro-value1{
+    animation: load1 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+}
+
+.pro-value2{
+    animation: load2 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+}
+
+.pro-value3{
+    animation: load3 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+}
+
+.pro-value4{
+    animation: load4 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+}
+
+
+
+@keyframes load1 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 81%;
+    }  
+}
+
+@keyframes load2 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 73%;
+    }    
+}
+
+@keyframes load3 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 85%;
+    }   
+}
+
+@keyframes load4 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 92%;
+    }   
+}
+
+
+.btn1{
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.btn1:hover{
+    background-color: transparent;
+    transition: 0.4s;
+    color: black;
+    border: 1px solid black;
+}
+
+.card{
+    border: none;
+    outline: none;
+    -webkit-box-shadow: -1px -1px 38px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px -1px 38px 4px rgba(0,0,0,0.75);
+    box-shadow: -1px -1px 38px 4px rgba(0,0,0,0.75);
+}
+
+.card p{
+    color: gray;
+}
+
+.circle{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(224, 216, 216);
+    color: black;
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 12px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.card:hover .circle{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+.circle:hover{
+    background-color: black;
+    color: whitesmoke;
+    transition: 0.4s;
+}
+/* nabar portion icon style*/
+.navbar-toggler{
+    background-color: black;
+    color: white;
+}
+
+.contact .btn3{
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 140px;
+    border-radius: 4px;
+}
+
+.btn3:hover{
+    background: transparent;
+    color: black;
+    transition: 0.4s;
+    border: 1px solid black;
+}
+
+footer{
+    background-color: black;
+    color: lightgray;
+
+}
+/* Popup */
+
+.popup{
+    background-color: #ffffff;
+    width: 420px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none; 
+    text-align: center;
+    -webkit-box-shadow: -2px 5px 25px 8px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 5px 25px 8px rgba(0,0,0,0.75);
+     box-shadow: -2px 5px 25px 8px rgba(0,0,0,0.75);
+}
+.popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #ffffff;
+    background: black;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.popup .h11{
+  margin-top: -20px;
+}
+.popup .p11{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+}
+.popup .a11{
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 8px 0;
+  
+}
